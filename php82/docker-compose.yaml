@@ -1,0 +1,15 @@
+services:
+  web82:
+    image: webdevops/php-apache:8.2
+    platform: linux/amd64
+    ports:
+      - "81:80"
+    volumes:
+      - ./htdocs:/app
+      - ./php.ini:/opt/docker/etc/php/php.ini
+    networks:
+      - php74_app-network
+
+networks:
+  php74_app-network:
+    external: true

@@ -24,7 +24,7 @@ ENV LD_LIBRARY_PATH /opt/oracle/instantclient
 
 # Instala a extensão oci8
 RUN echo 'instantclient,/opt/oracle/instantclient' | pecl install oci8-2.2.0 && \
-    echo "extension=oci8" > $(pecl config-get ext_dir)/oci8.ini
+    echo "extension=oci8" >> /usr/local/etc/php/conf.d/custom-oci8.ini
 
 # Instala a extensão pdo_oci
 RUN docker-php-ext-configure pdo_oci --with-pdo-oci=instantclient,/opt/oracle/instantclient && \

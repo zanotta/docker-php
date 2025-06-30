@@ -4,13 +4,14 @@ services:
     platform: linux/amd64
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - ./htdocs:/app
       - ./php.ini:/opt/docker/etc/php/php.ini
       - ./db.ini:/var/secrets/db.ini
+    build: .
     networks:
       - app-network
-    build: .
     depends_on:
       - mysql
 

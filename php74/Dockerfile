@@ -1,5 +1,11 @@
 FROM webdevops/php-apache:7.4
 
+# Corrige os repositórios do Debian Buster
+RUN sed -i 's|deb.debian.org|archive.debian.org|g' /etc/apt/sources.list && \
+    sed -i '/security.debian.org/d' /etc/apt/sources.list && \
+    echo "deb http://archive.debian.org/debian buster main contrib non-free" > /etc/apt/sources.list && \
+    echo "Acquire::Check-Valid-Until false;" > /etc/apt/apt.conf.d/99ignore-check-valid-until
+
 # Instalação de dependências
 RUN apt-get update && \
     apt-get install -y libaio1 libaio-dev wget && \

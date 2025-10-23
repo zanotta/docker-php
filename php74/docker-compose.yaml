@@ -1,5 +1,6 @@
 services:
   web74:
+    container_name: php74
     image: webdevops/php-apache:7.4
     platform: linux/amd64
     ports:

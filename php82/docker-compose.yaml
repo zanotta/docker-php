@@ -1,5 +1,6 @@
 services:
   web82:
+    container_name: php82
     image: webdevops/php-apache:8.2
     platform: linux/amd64
     ports:

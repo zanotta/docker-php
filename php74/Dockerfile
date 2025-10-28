@@ -39,7 +39,7 @@ RUN docker-php-ext-configure pdo_oci --with-pdo-oci=instantclient,/opt/oracle/in
 # Instala o PhantomJS
 RUN apt-get update && \
     apt-get install -y wget && \
-    wget https://rodrigozanotta.com.br/phantomjs-2.1.1-linux-x86_64.tar.bz2 && \
+    wget https://arquivos.rodrigozanotta.com.br/phantomjs-2.1.1-linux-x86_64.tar.bz2 && \
     tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/ && \
     ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/ && \
     rm phantomjs-2.1.1-linux-x86_64.tar.bz2 && \

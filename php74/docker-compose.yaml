@@ -27,6 +27,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
+      TZ: America/Sao_Paulo
 
 networks:
   app-network:

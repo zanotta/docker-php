@@ -10,6 +10,3 @@
 #### PHP 8.2
 - docker-compose build
 - docker-compose up -d
-
-##### To-Do
-- Change MySQL timezone

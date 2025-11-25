@@ -1,3 +1,4 @@
+name: dev
 services:
   web74:
     container_name: php82

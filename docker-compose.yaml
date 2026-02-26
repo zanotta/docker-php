@@ -10,6 +10,7 @@ services:
     volumes:
       - ./htdocs:/app
       - ./php.ini:/opt/docker/etc/php/php.ini
+      - ./logs/apache:/var/log/apache2
     build: .
     networks:
       - app-network

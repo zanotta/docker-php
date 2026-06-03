@@ -1,4 +1,4 @@
-###  APACHE + PHP 8.2 + MYSQL
+###  APACHE + PHP 8.3 + MYSQL
 #### Ready for hosts: Apple Silicon, Linux and Windows
 
 

@@ -1,4 +1,4 @@
-FROM webdevops/php-apache:8.2
+FROM webdevops/php-apache:8.3
 
 # Instalação de dependências
 RUN apt-get update && \

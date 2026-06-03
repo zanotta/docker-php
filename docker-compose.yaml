@@ -1,8 +1,8 @@
 name: dev
 services:
   web74:
-    container_name: php82
-    image: webdevops/php-apache:8.2
+    container_name: php83
+    image: webdevops/php-apache:8.3
     platform: linux/amd64
     ports:
       - "80:80"

@@ -1,9 +1,8 @@
 name: dev
 services:
-  web74:
+  web:
     container_name: php83
     image: webdevops/php-apache:8.3
-    platform: linux/amd64
     ports:
       - "80:80"
       - "443:443"
@@ -14,6 +13,7 @@ services:
     build: .
     networks:
       - app-network
+    restart: always
     depends_on:
       - mysql
 
